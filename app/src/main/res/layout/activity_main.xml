@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="wj.rotate.com.rotate.MainActivity">
+
+    <wj.rotate.com.rotate.EmojiImageView
+        android:id="@+id/edit_emoji_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:layout_centerInParent="true"/>
+
+    <wj.rotate.com.rotate.ScaleEditText
+        android:id="@+id/edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="64dp"
+        android:layout_marginLeft="@dimen/margin_36"
+        android:layout_marginRight="@dimen/margin_36"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:background="@android:color/transparent"
+        android:focusable="true"
+        android:gravity="center"
+        android:imeOptions="actionDone"
+        android:inputType="textMultiLine"
+        android:minWidth="2dp"
+        android:textSize="28sp"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:text="这是一段测试文字"
+        android:shadowRadius="5"
+        android:textIsSelectable="true"/>
+
+    <Button
+        android:id="@+id/switch_text_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_blue_dark"
+        android:focusable="true"
+        android:gravity="center"
+        android:minWidth="2dp"
+        android:textSize="28sp"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:text="切换到文字编辑模式"/>
+</RelativeLayout>
